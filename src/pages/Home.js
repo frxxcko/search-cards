@@ -25,7 +25,7 @@ export const Home = () => {
                 console.log(res)
             })
         } catch (error) {
-
+            console.log(error)
         }
     }, [cardName]);
 
@@ -39,10 +39,10 @@ export const Home = () => {
                 <h3 className='mt-5'>{cardName}</h3>
                 <div className='d-flex gap-5 mt-5'>
                     <Button>
-                        <a target='_blank' href={setCK_URL(cardName)}>Check '<span style={{ fontWeight: 'bold' }}>{cardName}</span>' in CardKindom</a>
+                        <a target='_blank' rel='noreferrer' href={setCK_URL(cardName)}>Check '<span style={{ fontWeight: 'bold' }}>{cardName}</span>' in CardKindom</a>
                     </Button>
                     <Button>
-                        <a target='_blank' href={setSC_URL(cardName)}>Check '<span style={{ fontWeight: 'bold' }}>{cardName}</span>' in StarCity</a>
+                        <a target='_blank' rel='noreferrer' href={setSC_URL(cardName)}>Check '<span style={{ fontWeight: 'bold' }}>{cardName}</span>' in StarCity</a>
                     </Button>
                 </div>
             </div>
