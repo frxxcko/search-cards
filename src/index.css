@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(34, 23, 51);
+  background-color: rgb(37, 30, 46);
   color: #fff;
 }
 
@@ -23,4 +23,34 @@ code {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.card-background {
+  background-color: #150d18;
+  color: #fff;
+}
+
+h3 {
+  padding: 5px 10px;
+  border-radius: 4px;
+  backdrop-filter: blur(20px);
+}
+
+.card-list-item {
+  position: relative;
+  min-height: 170px;
+  min-width: 140px;
+  padding-top: 15px;
+  border: 1px solid salmon;
+  > i {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+  }
+}
+
+.card-list {
+  max-width: 600px;
+  overflow: auto;
 }
