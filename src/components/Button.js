@@ -17,4 +17,5 @@ const SB = styled.button`
     color: #fff;
     font-family: 'Barlow';
     padding: 5px 20px;
+    cursor: pointer;
 `
