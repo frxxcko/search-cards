@@ -32,7 +32,7 @@ export const Home = () => {
     }
 
     useEffect(() => {
-        console.log(cardList)
+        btnRef.current.focus();
         AxiosInstance.get(`cards/random`)
             .then(res => {
                 let card = res.data;
