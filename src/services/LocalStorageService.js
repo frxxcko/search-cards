@@ -1,4 +1,4 @@
-const LocalStorageService = {
+export const LocalStorageService = {
     setItem: (KeyString, ItemObj) => {
         if (!KeyString || typeof KeyString !== 'string' || !ItemObj) return;
         localStorage.setItem(KeyString, ItemObj)
@@ -8,5 +8,3 @@ const LocalStorageService = {
         return localStorage.getItem(StringKey) ?? null
     }
 }
-
-export default LocalStorageService;
