@@ -1,12 +1,13 @@
 import React from 'react'
-import { useStore } from '../zustand/Store'
 
-export const CardItem = ({ card, deleteCard }) => {
+export const CardItem = ({ card, deleteCard, selectCard }) => {
     return (
-        <div className='d-flex align-items-center flex-column gap-2 card-list-item'>
-            <i id={card.id} className="fa-regular fa-circle-xmark" onClick={e => deleteCard(e.target.id)} style={{ color: '#ffffff' }}></i>
-            <img style={{ height: '150px' }} src={card.image} alt={card.name} />
-            <h6>{card.name}</h6>
+        <div className='d-flex gap-1 card-list-item'>
+            <i className="fa-regular fa-circle-xmark" onClick={() => deleteCard(card.id)} style={{ color: '#ffffff' }}></i>
+            <div className='d-flex flex-column align-items-center' onClick={() => selectCard(card.id)} style={{ cursor: 'pointer', border: '1px solid #fff' }}>
+                <img style={{ height: '150px' }} src={card.image} alt={card.name} />
+                <h6>{card.name}</h6>
+            </div>
         </div>
     )
 }
