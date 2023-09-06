@@ -63,7 +63,7 @@ export const Home = () => {
 
     return (
         <Background>
-            <Card className='d-flex flex-column align-items-center gap-2 px-5 py-5 card-blur' cardImageURL={card?.image_uris?.art_crop}>
+            <Card className='d-flex flex-column align-items-center gap-2 px-5 py-5 card-blur' cardImageURL={card?.art_crop}>
                 {card && <img style={{ height: '400px' }} className='mb-1' src={card.image} alt={card.name} />}
                 <h3 className='mb-1'>{card?.name ?? cardName}</h3>
                 <div className='d-flex gap-2'>
