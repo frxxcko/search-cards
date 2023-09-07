@@ -51,6 +51,21 @@ h3 {
 }
 
 .card-list {
-  max-width: 600px;
   overflow: auto;
+}
+
+@media (max-width: 414px) {
+  .responsive {
+    width: 320px;
+  }
+  .card-list {
+    max-width: 320px;
+  }
+}
+
+@media (max-height: 700px) {
+  .card-container {
+    height: 100%;
+    overflow: auto;
+  }
 }

@@ -1,10 +1,9 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import { t } from '../UI/Theme'
 
 export const Background = ({ children }) => {
     return (
-        <BG className='d-flex justify-content-center align-items-center flex-column'>
+        <BG className='d-flex justify-content-center align-items-center flex-column card-container'>
             {children}
         </BG>
     )

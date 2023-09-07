@@ -16,6 +16,6 @@ const SB = styled.button`
     border-radius: 4px;
     color: #fff;
     font-family: 'Barlow';
-    padding: 5px 20px;
+    padding: 5px 10px;
     cursor: pointer;
 `

@@ -14,7 +14,7 @@ export const Input = forwardRef(({ setCardName, ...rest }, ref) => {
 })
 
 const StyledInput = styled.input`
-  width: 300px;
+  min-width: 200px;
   height: 36px;
   border: 1px solid ${t.primary};
   border-radius: 4px;
