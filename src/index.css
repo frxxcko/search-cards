@@ -65,8 +65,7 @@ h3 {
 
 @media (max-height: 700px) {
   .card-container {
-    margin-top: 40px;
+    margin-top: 20px;
     height: 100%;
-    overflow: auto;
   }
 }

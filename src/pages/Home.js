@@ -64,7 +64,7 @@ export const Home = () => {
     return (
         <Background>
             <Card className='d-flex flex-column align-items-center gap-1' cardImageURL={card?.art_crop}>
-                {card && <img style={{ height: '400px', marginTop: '40px' }} className='mb-1' src={card.image} alt={card.name} />}
+                {card && <img style={{ height: '400px', paddingTop: '20px' }} className='mb-1' src={card.image} alt={card.name} />}
                 <h3 className='mb-1'>{card?.name ?? cardName}</h3>
                 <div className='d-flex gap-2'>
                     <Input ref={btnRef} setCardName={setCardName} />
